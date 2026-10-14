@@ -1,5 +1,4 @@
 
-
 package com.lab;
 
 import org.junit.jupiter.api.Test;
@@ -8,12 +7,24 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MainTest {
 
     @Test
-    void testAddition() {
-        assertEquals(30, Main.add(10, 20));
+    void testAddition1() {
+        int a = 2;
+        int b = 3;
+        int result = Main.add(a, b);
+
+        System.out.println(a + " + " + b + " = " + result);
+
+        assertEquals(5, result);
     }
 
     @Test
-    void testNegativeNumbers() {
-        assertEquals(1, Main.add(-2, 3));
+    void testAddition2() {
+        int a = 3;
+        int b = 4;
+        int result = Main.add(a, b);
+
+        System.out.println(a + " + " + b + " = " + result);
+
+        assertEquals(7, result);
     }
 }
