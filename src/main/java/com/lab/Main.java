@@ -3,7 +3,19 @@ package com.lab;
 
 public class Main {
 
-    public static int add(int a, int b) {
-        return a + b;
+    public static long factorial(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException(
+                "Number must be non-negative"
+            );
+        }
+
+        long result = 1;
+
+        for (int i = 1; i <= n; i++) {
+            result = result * i;
+        }
+
+        return result;
     }
 }
