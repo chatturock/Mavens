@@ -6,18 +6,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MainTest {
 
     @Test
-    void testFactorial() {
-        long result = Main.factorial(5);
+    void testLargest() {
+        int result = Main.largest(4, 12, 7);
 
-        System.out.println("Factorial of 5 = " + result);
-        assertEquals(120L, result);
+        System.out.println("Largest of 4, 12, 7 = " + result);
+        assertEquals(12, result);
     }
 
     @Test
-    void testZeroFactorial() {
-        long result = Main.factorial(0);
+    void testEqualValues() {
+        int result = Main.largest(5, 5, 5);
 
-        System.out.println("Factorial of 0 = " + result);
-        assertEquals(1L, result);
+        System.out.println("Largest of 5, 5, 5 = " + result);
+        assertEquals(5, result);
     }
 }
+
+
